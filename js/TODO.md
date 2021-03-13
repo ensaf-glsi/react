@@ -1,15 +1,16 @@
-[ ] Variables (type, global, fonction)
-[ ] Tableaux
-[ ] Objets
-[ ] Conditions
-[ ] Boucles
+[x] Variables
+[x] Tableaux
+[x] Objets
+[x] Conditions
+[x] Boucles
 while, for, do while
-[ ] fonctions
+[x] fonctions
 fonction anonymes ; fonctions predefinies
-[ ] mot clé this
-[ ] Prototype
+[x] Portée des variables
+[x] mot clé this
+[x] Prototype
 proto, Object.create, constructor
-[ ] exceptions
+[x] exceptions
 [ ] window
 alert, prompt, confirm, setTimeout, setInterval, clearTimout, clearInterval
 
