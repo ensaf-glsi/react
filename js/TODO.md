@@ -11,16 +11,16 @@ fonction anonymes ; fonctions predefinies
 [x] Prototype
 proto, Object.create, constructor
 [x] exceptions
-[ ] window
+[x] window
 alert, prompt, confirm, setTimeout, setInterval, clearTimout, clearInterval
 
-[ ] document (dom)
+[x] document (dom)
 getElementById, getElementsByClassName, getElementsByTagName
 querySelector, querySelectorAll
 className, classList, style
 innerHTML, innerText | textContent
 
-[ ] Event
+[x] Event
 addEventListener, preventDefault, stopPropagation, removeEventListener
 
 [ ] Ajax
@@ -30,7 +30,6 @@ GET, POST, FormData
 [ ] lodash
 trim, capitalize, pad, padStart, without, orderBy, filter, map, find, sample, sampleSize, groupBy, size, clone, assign, set, unset, get, debounce, throttle
 
-[ ] jQuery
 [ ] ES6 ou ES2015
 
 - [ ] Arrows and Lexical This
@@ -45,7 +44,7 @@ trim, capitalize, pad, padStart, without, orderBy, filter, map, find, sample, sa
 
 ## TPs
 
-[ ] Jeu de devinette
-[ ] Systeme des onglets
+[x] Jeu de devinette
+[x] Systeme des onglets
 [ ] Travail a faire (accordion)
 [ ] Jeu de memoire

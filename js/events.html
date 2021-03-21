@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      a {
+        border: 1px solid red;
+      }
+      div {
+        border: 1px solid green;
+      }
+      p {
+        border: 1px solid yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        <a href="http://google.com">Google</a>
+      </p>
+    </div>
+
+    <script>
+      var div = document.querySelector("div");
+      var p = div.querySelector("p");
+      var a = p.querySelector("a");
+
+      function handleClick(e) {
+        console.log("click sur a : ", e);
+        e.preventDefault();
+      }
+
+      a.addEventListener("click", handleClick);
+
+      p.addEventListener("click", (e) => {
+        console.log("click sur p");
+        e.stopPropagation();
+      });
+      div.addEventListener("click", () => {
+        console.log("click sur la div");
+        a.removeEventListener("click", handleClick);
+      });
+      document.body.addEventListener("click", () => {
+        console.log("click sur le body");
+      });
+    </script>
+  </body>
+</html>
