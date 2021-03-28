@@ -23,24 +23,24 @@ innerHTML, innerText | textContent
 [x] Event
 addEventListener, preventDefault, stopPropagation, removeEventListener
 
-[ ] Ajax
+[x] Ajax
 GET, POST, FormData
-[ ] Callback, Promises, Async/Await, Fetch
-
-[ ] lodash
-trim, capitalize, pad, padStart, without, orderBy, filter, map, find, sample, sampleSize, groupBy, size, clone, assign, set, unset, get, debounce, throttle
+[x] Callback, Promises, Async/Await, Fetch
 
 [ ] ES6 ou ES2015
 
+- [ ] Let + Const
 - [ ] Arrows and Lexical This
 - [ ] Classes
 - [ ] Enhanced Object Literals
 - [ ] Template Strings
 - [ ] Destructuring
 - [ ] Default + Rest + Spread
-- [ ] Let + Const
 - [ ] Modules
 - [ ] Math + Number + String + Object APIs
+
+[ ] lodash
+trim, capitalize, pad, padStart, without, orderBy, filter, map, find, sample, sampleSize, groupBy, size, clone, assign, set, unset, get, debounce, throttle
 
 ## TPs
 
