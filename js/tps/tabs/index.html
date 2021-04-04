@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div
+      id="utilisateur"
+      data-id="1234567890"
+      data-utilisateur="Monsieur x"
+      data-date-de-naissance="12/12/2000"
+    >
+      <span> Monsieur Tartempion </span>
+    </div>
+    <div class="container p-3">
+      <ul class="nav nav-tabs" role="tablist">
+        <li name="tab" class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            data-cible="#home"
+            type="button"
+            role="tab"
+          >
+            Home
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            data-cible="#profile"
+            type="button"
+            role="tab"
+          >
+            Profile
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            data-cible="#contact"
+            type="button"
+            role="tab"
+          >
+            Contact
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel">
+          Home - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Possimus quam dolores, amet magni facilis vero hic, deserunt vel optio
+          facere cumque, iste nobis totam ut est! Est perferendis amet enim.
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel">
+          Profile - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Amet nemo natus ex deleniti nostrum magnam? Iste aperiam adipisci
+          alias possimus. Enim possimus sit provident ipsam, natus iusto
+          perferendis maxime minima?
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel">
+          Contact - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Porro omnis deleniti ex nihil optio odio aspernatur praesentium?
+          Officiis dolorem dolore aliquid tenetur dicta nam est voluptas.
+          Itaque, dolorum vitae. Aperiam.
+        </div>
+      </div>
+      <ul class="nav nav-tabs" role="tablist">
+        <li name="tab" class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            data-cible="#home2"
+            type="button"
+            role="tab"
+          >
+            Home 2
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            data-cible="#profile2"
+            type="button"
+            role="tab"
+          >
+            Profile 2
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home2" role="tabpanel">
+          Home 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Possimus quam dolores, amet magni facilis vero hic, deserunt vel optio
+          facere cumque, iste nobis totam ut est! Est perferendis amet enim.
+        </div>
+        <div class="tab-pane fade" id="profile2" role="tabpanel">
+          Profile 2 - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Amet nemo natus ex deleniti nostrum magnam? Iste aperiam adipisci
+          alias possimus. Enim possimus sit provident ipsam, natus iusto
+          perferendis maxime minima?
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
