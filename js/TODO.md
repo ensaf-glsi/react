@@ -27,16 +27,16 @@ addEventListener, preventDefault, stopPropagation, removeEventListener
 GET, POST, FormData
 [x] Callback, Promises, Async/Await, Fetch
 
-[ ] ES6 ou ES2015
+[x] ES6 ou ES2015
 
-- [ ] Let + Const
-- [ ] Arrows and Lexical This
-- [ ] Classes
-- [ ] Enhanced Object Literals
-- [ ] Template Strings
-- [ ] Destructuring
-- [ ] Default + Rest + Spread
-- [ ] Modules
+- [x] Let + Const
+- [x] Arrows and Lexical This
+- [x] Classes
+- [x] Enhanced Object Literals
+- [x] Template Strings
+- [x] Destructuring
+- [x] Default + Rest + Spread
+- [x] Modules
 - [ ] Math + Number + String + Object APIs
 
 [ ] lodash
@@ -46,5 +46,9 @@ trim, capitalize, pad, padStart, without, orderBy, filter, map, find, sample, sa
 
 [x] Jeu de devinette
 [x] Systeme des onglets
-[ ] Travail a faire (accordion)
-[ ] Jeu de memoire
+[x] Travail a faire (accordion)
+[x] Jeu de memoire
+
+## controles
+
+[ ] Jeu de memoire (version améliorée)
