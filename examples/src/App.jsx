@@ -1,12 +1,10 @@
-import './App.css'
-import Form from './components/form/ReactHookForm'
+import PersonList from './features/persons/list'
 
 function App() {
 
   return (
     <>
-      <Form />
-      {/* <PersonList /> */}
+      <PersonList />
     </>
   )
 }

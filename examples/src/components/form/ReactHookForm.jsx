@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useForm } from "react-hook-form"
-import Field from "./Field";
+import Field from "./field";
 
 const CELIBATAIRE = "Célibataire";
 const situations = [CELIBATAIRE, "Marié(e)", "Divorcé(e)", "Veuf(veuve)"];
