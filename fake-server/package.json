@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "server:start": "json-server db.json -p 7151"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.20"
+  }
+}
