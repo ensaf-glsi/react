@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { v4 as uuidv4 } from 'uuid';
 
 import { persons } from './data';
 import EditPerson from "./edit";
+import { useCrud, useReducerCrud } from "../../../libs/hooks/crud";
 
 let count = 0;
 
@@ -14,25 +14,19 @@ const defaultValues = {
 };
 
 const PersonList = () => {
-    const [data, setData] = useState(persons);
-    const [entity, setEntity] = useState(null);
+    // const { data, create, update, remove } = useCrud(persons);
+    const { data, create, update, remove } = useReducerCrud(persons);
+    
+    
+    const [ entity, setEntity ] = useState(null);
     const editing = entity !== null;
 
-    const remove = person => {
+    const removePerson = person => {
         if (confirm(`Etes vous sur de vouloir supprimer la personne avec le nom : ${person.nom} ${person.prenom} ?`)) {
-            setData(draft => {
-                const newData = draft.filter(p => p.id !== person.id);
-                console.log('new data : ', newData);
-                return newData;
-            });
+            remove(person.id);
         }
-    };
-    const create = person => {
-        setData(draft => draft.concat({...person, id: uuidv4()}));
     }
-    const update = person => {
-        setData(draft => draft.map(p => p.id === person.id ? person : p));
-    }
+
     const onValidate = values => {
         if (entity === defaultValues) {
             create(values);
@@ -108,7 +102,7 @@ const PersonList = () => {
                                                     className="text-indigo-600 hover:text-indigo-900">
                                                 Modifier<span className="sr-only">, {person.name}</span>
                                             </button>
-                                            <button className="ml-1 text-red-600 hover:text-red-900" onClick={() => remove(person)}>Supprimer</button>
+                                            <button className="ml-1 text-red-600 hover:text-red-900" onClick={() => removePerson(person)}>Supprimer</button>
                                         </td>
                                     </tr>
                                 ))}

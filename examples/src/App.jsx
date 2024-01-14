@@ -1,4 +1,4 @@
-import PersonList from './features/persons/list'
+import PersonList from './features/persons/memory/list'
 
 function App() {
 
